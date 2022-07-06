@@ -97,7 +97,7 @@ resource "aws_security_group_rule" "FireFlow_238" {
   cidr_blocks       = ["5.5.5.5/32"]
   security_group_id = aws_security_group.allow_inbound.id
 }
-resource "aws_security_group_rule" "FireFlow_240" {
+resource "aws_security_group_rule" "FireFlow_2400" {
   type              = "ingress"
   from_port         = "44"
   to_port           = "44"
