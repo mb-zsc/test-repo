@@ -14,7 +14,7 @@ terraform {
 
 
 
-#**************************AWS Part Begins*************************************
+#**************************AWS Part Begins***************************************
 
 provider "aws" {
   profile = "default"
@@ -38,8 +38,8 @@ resource "aws_instance" "example1" {
 
 resource "aws_security_group_rule" "example" {
   type              = "ingress"
-  from_port         = 55
-  to_port           = 55
+  from_port         = 56
+  to_port           = 56
   protocol          = "tcp"
   cidr_blocks       = ["0.0.0.0/0"]
   security_group_id = aws_security_group.allow_inbound.id
